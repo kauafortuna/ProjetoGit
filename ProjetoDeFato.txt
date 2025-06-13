@@ -9,13 +9,61 @@ SOBRE GIT E GITHUB:
      pessoas. Permite gerenciar projetos, acompanhar issues, revisar código e 
      contribuir em equipe.
     
-        COMANDOS DO GIT 
+        COMANDOS DO GIT (tem que abrir a pasta no visual code ou outra ide ou editor e abrir a pasta com o git bash)
+        (so criar a pasta na area de trabalho, entrar dentro dela ou clicar com o 
+        botão direito e ir em abrir com visual code, crie seus arquivos e salve
+         e va dnv na pasta que criou e clique novamento com o botão direito e 
+         clique em abrir com git bash)
+
+    **Agora sim pode executar os comandos**
+            
+
+
+                               COMANDOS DO GIT 
+
     git init: Cria um repositório Git vazio na pasta atual para começar a versionar arquivos.
-    git add: Adiciona os arquivos pra area de pre enviar para o repositorio remoto
-    git status: Mostra o status do repositorio local ("maquina")
-    git commit: Posta no GitHub ("Plataforma")
-    git commit -m "mensagem" (subtitulo do repositorio)
+
+    git add: Adiciona os arquivos pra area "Pré enviar" para o repositorio remoto
+    sintaxe: git add "arquivo" (para enviar somente o arquivo)
+    sintaxe: git add . (para enviar todos os arquivos dentro do repositorio local)
+
+    git status: Mostra o status do repositorio local (maquina) e aslterações feitas
+
+    git remote: É feito quando não tem conexão entre o repositorio local com o 
+    remoto na plataforma GitHub, Necessário criar o mesmo repositorio no Github
+    feito apenas uma vez com:
+    sintaxe: 'git remote add origin <link do repositorio criado no GitHub> ssh ou https'
+
+      EXPLICAÇÃO:
+       Não, apenas git remote add origin não funcionaria.
+         Você precisa informar também o link (URL) do repositório remoto do GitHub.
+
+        **Explicação:**  
+            - git remote add: é o comando para adicionar um novo repositório remoto.
+            - origin: é o nome (apelido) que você está dando para esse repositório remoto.
+            - <URL-do-repositorio>: é o endereço do seu repositório no GitHub. 
+
+    Se você rodar só git remote add origin, o Git vai reclamar que está faltando o argumento da URL.
+
+    git commit: Posta no GitHub (Plataforma)
+
+    Quando é a primeira vez commitando a sintaxe é
+    sintaxe: 'git commit -m "mensagem"' (nome do commit)
+
+    primeira vez o 'git push -u'
+    sintaxe:'git push -u origin main' 
     
+    Depois da primeira vez você pode sempre que for commitar usar
+    sintaxe: 'git commit -m "mensagem"' (nome do commit)
+
+    mas a segunda push diferente sem o -u
+    sintaxe: 'git push origin main' 
+
+    git push: envia para repositori
+    git push -u origin main:O comando git push -u origin main envia as alterações
+     da branch main do seu repositório local para o repositório remoto chamado 
+     origin e define origin/main como o destino padrão para futuros pushes e pulls.
+        
     git pull: O comando `git pull` baixa (fetch) e integra (merge) as alterações
      do repositório remoto para o seu repositório local, atualizando sua branch 
      atual com as últimas mudanças do servidor.
@@ -25,17 +73,26 @@ SOBRE GIT E GITHUB:
     local, mas não as aplica na sua branch atual.
     git merge – aplica (mescla) essas alterações baixadas na sua branch atual.
 
-    git push: envia para repositorio
-    git push -u origin main:O comando git push -u origin main envia as alterações
-     da branch main do seu repositório local para o repositório remoto chamado 
-     origin e define origin/main como o destino padrão para futuros pushes e pulls.
-
-    git remote: é feito quando não tem conexão entre o repositorio local com o 
-    remoto na plataforma GitHub (Necessário criar o mesmo repositorio no Github
-    feito apenas uma vez com -git remote add origin main )
-
     git branch -M main: O comando `git branch -M main` renomeia a branch atual
      para `main`, forçando a troca mesmo que a branch `main` já exista. É útil 
      para padronizar o nome principal do repositório.
 
-     git merge: Combina as alterações de outra branch na branch atual.
+    git merge: Combina as alterações de outra branch na branch atual.
+
+    git checkout -b "nome da nova branch": Esse comando cria uma nova branch 
+     com o nome especificado e já faz a troca para ela, economizando o trabalho
+      de executar dois comandos (criar a branch e depois trocar para ela).
+
+    TODA VEZ QUE QUISER FAZE RUM COMMIT USE os passos
+    'git add .' ou 'git add "arquivo especifico"'
+    'git commit -m "nome do commit"'
+    'git push origin main' 
+    ou
+    ou se estiver em uma branch alternativa use
+    'git push origin nome-da-branch' 
+            ex: 'git push novo-botao' 
+            (antes eu mudei de branch usando 'git checkout -b novo-botao' para 
+            sair da main e entrar na que eu criei, ai eu fiz as modificações no arquivo 
+            dentro do visualcode, ai eu fui commitar seguindos os passos, 
+            'git add .', 'git commit -m "criei um botao", 'git push origin novo-botao')
+            
