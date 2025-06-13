@@ -6,3 +6,4 @@ e esse vai ser meu terceiro commit (carinha feliz :)
 -Mudei de branch criando um nova, adicionei mais explicações e vais er meu quarto commit.
 -renomeei o arquivo 'projetodefato' para 'OqueEuAprendiGitGitHub' e esqueci de adicionar no readme.md que era meu quinto commit
 -fiz o sexto commit e esse vai se ro setimo
+-testar o git pull oitavo commit
