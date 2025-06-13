@@ -1,0 +1,41 @@
+Projeto vai ser desenvolvido aqui
+
+SOBRE GIT E GITHUB: 
+    GIT: Ferramenta de Versionamento de arquivos (controlar e registrar as 
+    alterações feitas nos arquivos ao longo do tempo feita por você ou o seu time) 
+
+    GITHUB: Plataforma online que hospeda repositórios Git, facilitando o 
+    trabalho colaborativo, o backup e o compartilhamento de código com outras
+     pessoas. Permite gerenciar projetos, acompanhar issues, revisar código e 
+     contribuir em equipe.
+    
+        COMANDOS DO GIT 
+    git init: Cria um repositório Git vazio na pasta atual para começar a versionar arquivos.
+    git add: Adiciona os arquivos pra area de pre enviar para o repositorio remoto
+    git status: Mostra o status do repositorio local ("maquina")
+    git commit: Posta no GitHub ("Plataforma")
+    git commit -m "mensagem" (subtitulo do repositorio)
+    
+    git pull: O comando `git pull` baixa (fetch) e integra (merge) as alterações
+     do repositório remoto para o seu repositório local, atualizando sua branch 
+     atual com as últimas mudanças do servidor.
+
+    O comando git pull é uma combinação de dois comandos:
+    git fetch – baixa as alterações do repositório remoto para o seu repositório 
+    local, mas não as aplica na sua branch atual.
+    git merge – aplica (mescla) essas alterações baixadas na sua branch atual.
+
+    git push: envia para repositorio
+    git push -u origin main:O comando git push -u origin main envia as alterações
+     da branch main do seu repositório local para o repositório remoto chamado 
+     origin e define origin/main como o destino padrão para futuros pushes e pulls.
+
+    git remote: é feito quando não tem conexão entre o repositorio local com o 
+    remoto na plataforma GitHub (Necessário criar o mesmo repositorio no Github
+    feito apenas uma vez com -git remote add origin main )
+
+    git branch -M main: O comando `git branch -M main` renomeia a branch atual
+     para `main`, forçando a troca mesmo que a branch `main` já exista. É útil 
+     para padronizar o nome principal do repositório.
+
+     git merge: Combina as alterações de outra branch na branch atual.
